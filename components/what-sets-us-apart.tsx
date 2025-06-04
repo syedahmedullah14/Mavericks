@@ -29,7 +29,7 @@ export default function WhatSetsUsApart() {
       className="py-20 text-white relative"
       style={{
         backgroundImage:
-          "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/images/what-sets-apart-bg.jpg')",
+          "linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/images/what-sets-apart-bg.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}

@@ -8,7 +8,7 @@ export default function ContactSection() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/images/contact-bg.jpg')",
+            backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/images/contact-bg.jpg')",
           }}
         ></div>
         <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-4">
