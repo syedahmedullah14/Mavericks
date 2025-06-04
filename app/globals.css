@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #0a2b5c;
+  --secondary: #e52222;
+  --background: #ffffff;
+  --foreground: #0a2b5c;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
+
+.hero-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  background-size: cover;
+  background-position: center;
+}
+
+.section-heading {
+  @apply text-3xl md:text-4xl font-bold mb-4;
+}
+
+.section-subheading {
+  @apply text-xl md:text-2xl font-semibold mb-3;
+}
+
+.accent-text {
+  color: var(--secondary);
+}
+
+.btn-primary {
+  @apply bg-red-600 text-white px-6 py-2 rounded hover:bg-red-700 transition-colors;
+}
+
+.btn-outline {
+  @apply border border-red-600 text-red-600 px-6 py-2 rounded hover:bg-red-600 hover:text-white transition-colors;
+}
