@@ -136,22 +136,22 @@ export default function Partners() {
               ))}
             </h3>
 
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 place-items-center max-w-6xl mx-auto">
               {category.partners.map((partner, partnerIndex) => (
                 <div
                   key={partnerIndex}
-                  className="group bg-white p-4 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 hover:border-gray-200"
+                  className="group bg-white p-6 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 hover:border-gray-200 flex flex-col items-center justify-center w-full max-w-sm"
                 >
-                  <div className="h-16 relative mb-3 flex items-center justify-center">
+                  <div className="h-32 w-full relative mb-4 flex items-center justify-center">
                     <Image
                       src={partner.logo || "/placeholder.svg"}
                       alt={partner.name}
                       fill
-                      style={{ objectFit: "contain" }}
+                      style={{ objectFit: "contain", margin: "auto" }}
                       className="max-w-full max-h-full transition-transform duration-300 group-hover:scale-105"
                     />
                   </div>
-                  <div className="text-center">
+                  <div className="text-center w-full">
                     <h4 className="font-semibold mb-2 text-xs text-gray-800 leading-tight">{partner.name}</h4>
                     <p className="text-xs text-gray-600 leading-relaxed line-clamp-3">{partner.description}</p>
                   </div>
@@ -163,7 +163,7 @@ export default function Partners() {
       </div>
 
       {/* Partner Logos Showcase */}
-      <div className="bg-gray-50 py-12 mt-16">
+      {/* <div className="bg-gray-50 py-12 mt-16">
         <div className="container mx-auto px-4">
           <h3 className="text-xl font-bold text-center mb-8 text-[#0a2b5c]">Trusted By Industry Leaders</h3>
           <div className="flex flex-wrap justify-center items-center gap-8 opacity-70">
@@ -183,7 +183,7 @@ export default function Partners() {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   )
 }
