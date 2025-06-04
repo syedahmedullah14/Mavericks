@@ -1,26 +1,26 @@
-import Image from "next/image"
+ import Image from "next/image"
 
 export default function PanelsSection() {
   const panelTypes = [
     {
       name: "PLC Control Panels",
-      image: "/images/products/plc-panels.jpg",
+      image: "/plc-panels.jpg",
     },
     {
       name: "DCS Control Panels",
-      image: "/images/products/dcs-panels.jpg",
+      image: "/dsc-panel.jpg",
     },
     {
       name: "MCC Panels",
-      image: "/images/products/mcc-panels.jpg",
+      image: "/mcc-panels.webp",
     },
     {
       name: "PCC Panels",
-      image: "/images/products/pcc-panels.jpg",
+      image: "/pcc-panels.jpg",
     },
     {
       name: "VDF Panels",
-      image: "/images/products/vdf-panels.jpg",
+      image: "/vfd-panels.png",
     },
   ]
 
