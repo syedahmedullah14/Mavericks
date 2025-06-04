@@ -4,31 +4,31 @@ export default function ValvesSection() {
   const valveTypes = [
     {
       name: "Globe Control Valves",
-      image: "/images/products/globe-valves.jpg",
+      image: "/globe-control.jpg",
     },
     {
       name: "Ball Control Valves",
-      image: "/images/products/ball-valves.jpg",
+      image: "/ball-valves.png",
     },
     {
       name: "Cryogenic Valves",
-      image: "/images/products/cryogenic-valves.jpg",
+      image: "/cryogenic-valve.jpg",
     },
     {
       name: "Gate Valves",
-      image: "/images/products/gate-valves.jpg",
+      image: "/gate-valve2.webp",
     },
     {
       name: "Butterfly Valves",
-      image: "/images/products/butterfly-valves.jpg",
+      image: "/butterfly-valves.png",
     },
     {
       name: "Non-Return Valves",
-      image: "/images/products/non-return-valves.jpg",
+      image: "/non-return-valves.jpg",
     },
     {
       name: "Double Disc Conduit Gate Valves",
-      image: "/images/products/double-disc-valves.jpg",
+      image: "/gate-valves.jpg",
     },
   ]
 

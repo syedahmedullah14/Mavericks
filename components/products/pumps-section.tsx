@@ -4,15 +4,15 @@ export default function PumpsSection() {
   const pumpTypes = [
     {
       name: "Cryogenic Pumps",
-      image: "/images/products/cryogenic-pumps.jpg",
+      image: "/cryogenic-pump.png",
     },
     {
       name: "Submersible Pumps",
-      image: "/images/products/submersible-pumps.jpg",
+      image: "/submersible-pumps.jpg",
     },
     {
       name: "Inline And Split Pumps",
-      image: "/images/products/inline-pumps.jpg",
+      image: "/inline-pump.jpg",
     },
   ]
 

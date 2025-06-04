@@ -4,27 +4,27 @@ export default function InstrumentationSection() {
   const instrumentTypes = [
     {
       name: "Pressure Transmitters",
-      image: "/images/products/pressure-transmitters.jpg",
+      image: "/pressure transmitter.webp",
     },
     {
       name: "Temperature Transmitters",
-      image: "/images/products/temperature-transmitters.jpg",
+      image: "/temperature transmitter.webp",
     },
     {
       name: "Flow Transmitters",
-      image: "/images/products/flow-transmitters.jpg",
+      image: "/flow transmitter.webp",
     },
     {
       name: "Level Transmitters",
-      image: "/images/products/level-transmitters.jpg",
+      image: "/level-transmitter.jpg",
     },
     {
       name: "Gauges",
-      image: "/images/products/gauges.jpg",
+      image: "/gauges.webp",
     },
     {
       name: "Analyzers",
-      image: "/images/products/analyzers.jpg",
+      image: "/analyzers.png",
     },
   ]
 

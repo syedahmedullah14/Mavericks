@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <div className="mb-4">
-              <Image src="/logo-white.png" alt="Mavericks Logo" width={150} height={40} className="mb-4" />
+              <Image src="/logo-white2.png" alt="Mavericks Logo" width={150} height={40} className="mb-4" />
             </div>
             <p className="text-sm mb-4">
               Mavericks Delivers Industrial Automation, Electrical And Instrumentation Solutions Tailored For Critical

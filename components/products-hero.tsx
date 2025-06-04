@@ -1,10 +1,11 @@
 export default function ProductsHero() {
   return (
     <section
-      className="relative bg-cover bg-center text-white py-24"
+      className="relative bg-cover bg-center bg-fixed text-white py-40 md:py-60 min-h-[70vh] flex items-center"
       style={{
         backgroundImage:
-          "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/images/products-overview-bg.jpg')",
+          "linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/images/products-overview-bg.jpg')",
+        backgroundPosition: "center 30%"
       }}
     >
       <div className="container mx-auto px-4">

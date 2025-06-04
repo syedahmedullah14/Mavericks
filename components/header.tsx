@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 
 export default function Header() {
   return (
-    <header className="bg-white shadow-sm">
+    <header className="bg-white shadow-sm sticky top-0 z-50">
       <div className="container mx-auto px-4 flex items-center justify-between h-20">
         <Link href="/" className="flex items-center">
           <div className="relative w-40 h-10">
@@ -13,20 +13,20 @@ export default function Header() {
         </Link>
 
         <nav className="hidden md:flex items-center space-x-1">
-          <Link href="/" className="px-3 py-2 text-sm font-medium hover:text-[#e52222]">
+          <Link href="/" className="px-3 py-2 text-sm font-medium hover:text-[#e52222] transition-colors">
             HOME
           </Link>
-          <Link href="/about-us" className="px-3 py-2 text-sm font-medium hover:text-[#e52222]">
+          <Link href="/about-us" className="px-3 py-2 text-sm font-medium hover:text-[#e52222] transition-colors">
             ABOUT US
           </Link>
-          <Link href="/products" className="px-3 py-2 text-sm font-medium hover:text-[#e52222]">
+          <Link href="/products" className="px-3 py-2 text-sm font-medium hover:text-[#e52222] transition-colors">
             PRODUCTS
           </Link>
-          <Link href="/partners" className="px-3 py-2 text-sm font-medium hover:text-[#e52222]">
+          <Link href="/partners" className="px-3 py-2 text-sm font-medium hover:text-[#e52222] transition-colors">
             PARTNERS
           </Link>
           <Link href="/contact-us">
-            <Button className="bg-[#e52222] text-white hover:bg-[#c41c1c] ml-2">CONTACT US</Button>
+            <Button className="bg-[#e52222] text-white hover:bg-[#c41c1c] ml-2 transition-colors">CONTACT US</Button>
           </Link>
         </nav>
 
