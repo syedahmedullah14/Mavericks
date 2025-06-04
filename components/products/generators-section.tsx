@@ -22,7 +22,7 @@ export default function GeneratorsSection() {
 
         <div className="relative h-80 overflow-hidden rounded-lg">
           <Image
-            src="/images/products/diesel-generator.jpg"
+            src="/diesel.jpg"
             alt="Diesel Generator Sets (3kVA – 4500kVA)"
             fill
             style={{ objectFit: "cover" }}

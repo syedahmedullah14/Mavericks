@@ -4,6 +4,7 @@ import PumpsSection from "@/components/products/pumps-section"
 import InstrumentationSection from "@/components/products/instrumentation-section"
 import PanelsSection from "@/components/products/panels-section"
 import GeneratorsSection from "@/components/products/generators-section"
+import EPCSolutions from "@/components/products/epc-solutions"
 
 export default function Products() {
   return (
@@ -14,6 +15,7 @@ export default function Products() {
       <InstrumentationSection />
       <PanelsSection />
       <GeneratorsSection />
+      <EPCSolutions />
     </>
   )
 }
