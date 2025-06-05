@@ -13,7 +13,7 @@ export default function ProductSolutions() {
         "High-Performance Industrial Valves, Including Globe, Ball, Gate, Butterfly, And Cryogenic Types, Designed For Precision Flow Control Across Demanding Applications.",
       image: "/Valves.jpg",
       link: "/products",
-      hash: "valves",
+      sectionId: "valves",
     },
     {
       title: "Pumps",
@@ -21,7 +21,7 @@ export default function ProductSolutions() {
         "A Versatile Range Of Cryogenic, Submersible, Vertical Inline, And Split-Case Pumps To Meet Varied Industrial Fluid Handling Needs With Reliability And Efficiency.",
       image: "/Pumps.jpg",
       link: "/products",
-      hash: "pumps",
+      sectionId: "pumps",
     },
     {
       title: "Instrumentation",
@@ -29,7 +29,7 @@ export default function ProductSolutions() {
         "Comprehensive Instrumentation Solutions For Pressure, Temperature, Flow, And Level Measurement – Including Transmitters, Gauges, Analyzers, And Fittings.",
       image: "/instrumentation-fittings.jpg",
       link: "/products",
-      hash: "instrumentation",
+      sectionId: "instrumentation",
     },
     {
       title: "Panels",
@@ -37,7 +37,7 @@ export default function ProductSolutions() {
         "Custom-Built PCC, MCC, VFD, And Control Panels Designed For Seamless Integration With Automation Systems And Safe Electrical Distribution.",
       image: "/Panels.jpg",
       link: "/products",
-      hash: "panels",
+      sectionId: "panels",
     },
     {
       title: "Generators",
@@ -45,7 +45,7 @@ export default function ProductSolutions() {
         "Robust Diesel Generator Sets Ranging From 3kVA To 4500kVA, Ensuring Uninterrupted Power Supply For Industrial And Commercial Operations.",
       image: "/Generators.jpg",
       link: "/products",
-      hash: "generators",
+      sectionId: "generators",
     },
     {
       title: "EPC Solutions",
@@ -53,7 +53,7 @@ export default function ProductSolutions() {
         "End-To-End Engineering, Procurement, And Construction Services For Industrial Automation, Oil & Gas Systems, Boiler Automation, And Complete Plant Solutions.",
       image: "/epc-solutions.jpg",
       link: "/products",
-      hash: "epc",
+      sectionId: "epc-solutions",
     },
   ]
 
@@ -157,7 +157,21 @@ export default function ProductSolutions() {
                   {product.title}
                 </motion.h3>
                 <p className="text-gray-700 mb-4 leading-relaxed">{product.description}</p>
-                <Link href={{ pathname: product.link, hash: product.hash }} scroll={false}>
+                <Link 
+                  href={`${product.link}#${product.sectionId}`}
+                  scroll={false}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    // Smooth scroll to section
+                    const element = document.getElementById(product.sectionId);
+                    if (element) {
+                      element.scrollIntoView({ behavior: 'smooth' });
+                    } else {
+                      // If element not found (not on products page), navigate to products page with hash
+                      window.location.href = `${product.link}#${product.sectionId}`;
+                    }
+                  }}
+                >
                   <Button
                     variant="outline"
                     className="border-[#e52222] text-[#e52222] hover:bg-[#e52222] hover:text-white group transition-all duration-300"

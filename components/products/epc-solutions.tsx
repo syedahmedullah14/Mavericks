@@ -38,7 +38,7 @@ export default function EPCSolutions() {
   }
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section id="epc-solutions" className="py-16 bg-gray-50">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
