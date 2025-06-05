@@ -25,7 +25,7 @@ export default function Header() {
           <Link href="/partners" className="px-3 py-2 text-sm font-medium hover:text-[#e52222] transition-colors">
             PARTNERS
           </Link>
-          <Link href="/contact-us">
+          <Link href="/contact">
             <Button className="bg-[#e52222] text-white hover:bg-[#c41c1c] ml-2 transition-colors">CONTACT US</Button>
           </Link>
         </nav>
