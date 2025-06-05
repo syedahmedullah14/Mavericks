@@ -1,4 +1,7 @@
-import Image from "next/image"
+"use client"
+
+import { motion, AnimatePresence } from "framer-motion"
+import ProductCard from "./product-card"
 
 export default function InstrumentationSection() {
   const instrumentTypes = [
@@ -28,44 +31,55 @@ export default function InstrumentationSection() {
     },
   ]
 
-  return (
-    <section id="instrumentation" className="py-16 bg-white relative">
-      <div
-        className="absolute inset-0 opacity-10"
-        style={{
-          backgroundImage: "url('/images/instrumentation-bg.jpg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      ></div>
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+      },
+    },
+  }
 
-      <div className="container mx-auto px-4 relative z-10">
-        <h2 className="text-3xl font-bold mb-4">Instrumentation</h2>
-        <p className="mb-8 text-lg">
+  return (
+    <section id="instrumentation" className="py-16 bg-white">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="container mx-auto px-4"
+      >
+        <motion.h2
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          className="text-3xl font-bold mb-4"
+        >
+          Instrumentation
+        </motion.h2>
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          className="mb-8 text-lg"
+        >
           We offer comprehensive instrumentation solutions including sensors, transmitters, and analyzers for measuring
           pressure, flow, temperature, and level. Every instrument is tested and commissioned to ensure accuracy,
           safety, and system integration.
-        </p>
+        </motion.p>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="grid grid-cols-2 md:grid-cols-3 gap-6"
+        >
           {instrumentTypes.map((instrument, index) => (
-            <div key={index} className="relative">
-              <div className="relative h-48 mb-2 overflow-hidden">
-                <Image
-                  src={instrument.image || "/placeholder.svg"}
-                  alt={instrument.name}
-                  fill
-                  style={{ objectFit: "cover" }}
-                  className="rounded-md"
-                />
-                <div className="absolute inset-0 bg-black bg-opacity-40 flex items-end">
-                  <h3 className="text-white p-3 font-medium">{instrument.name}</h3>
-                </div>
-              </div>
-            </div>
+            <ProductCard key={index} name={instrument.name} image={instrument.image} />
           ))}
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </section>
   )
 }
