@@ -32,7 +32,7 @@ export default function ProductSolutions() {
       sectionId: "instrumentation",
     },
     {
-      title: "panels",
+      title: "Panels",
       description:
         "Custom-Built PCC, MCC, VFD, And Control Panels Designed For Seamless Integration With Automation Systems And Safe Electrical Distribution.",
       image: "/panels.jpg",
