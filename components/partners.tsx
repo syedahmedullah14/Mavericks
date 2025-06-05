@@ -111,7 +111,7 @@ export default function Partners() {
       <div
         className="relative py-16 mb-12"
         style={{
-          backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/images/partners-bg.jpg')",
+          backgroundImage: "linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('/images/partners-bg.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
