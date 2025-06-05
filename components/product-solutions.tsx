@@ -11,7 +11,7 @@ export default function ProductSolutions() {
       title: "Valves",
       description:
         "High-Performance Industrial Valves, Including Globe, Ball, Gate, Butterfly, And Cryogenic Types, Designed For Precision Flow Control Across Demanding Applications.",
-      image: "/Valves.jpg",
+      image: "/valves.jpg",
       link: "/products",
       sectionId: "valves",
     },
@@ -19,7 +19,7 @@ export default function ProductSolutions() {
       title: "Pumps",
       description:
         "A Versatile Range Of Cryogenic, Submersible, Vertical Inline, And Split-Case Pumps To Meet Varied Industrial Fluid Handling Needs With Reliability And Efficiency.",
-      image: "/Pumps.jpg",
+      image: "/pumps.jpg",
       link: "/products",
       sectionId: "pumps",
     },
@@ -32,7 +32,7 @@ export default function ProductSolutions() {
       sectionId: "instrumentation",
     },
     {
-      title: "Panels",
+      title: "panels",
       description:
         "Custom-Built PCC, MCC, VFD, And Control Panels Designed For Seamless Integration With Automation Systems And Safe Electrical Distribution.",
       image: "/Panels.jpg",
@@ -43,7 +43,7 @@ export default function ProductSolutions() {
       title: "Generators",
       description:
         "Robust Diesel Generator Sets Ranging From 3kVA To 4500kVA, Ensuring Uninterrupted Power Supply For Industrial And Commercial Operations.",
-      image: "/Generators.jpg",
+      image: "/generators.jpg",
       link: "/products",
       sectionId: "generators",
     },
