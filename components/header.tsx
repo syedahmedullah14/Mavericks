@@ -27,9 +27,9 @@ export default function Header() {
           <Link href="/products" className="px-3 py-2 text-sm font-medium hover:text-[#e52222] transition-colors">
             PRODUCTS
           </Link>
-          <Link href="/partners" className="px-3 py-2 text-sm font-medium hover:text-[#e52222] transition-colors">
+          {/* <Link href="/partners" className="px-3 py-2 text-sm font-medium hover:text-[#e52222] transition-colors">
             PARTNERS
-          </Link>
+          </Link> */}
           <Link href="/contact">
             <Button className="bg-[#e52222] text-white hover:bg-[#c41c1c] ml-2 transition-colors">CONTACT US</Button>
           </Link>
@@ -82,13 +82,13 @@ export default function Header() {
               >
                 PRODUCTS
               </Link>
-              <Link 
+              {/* <Link 
                 href="/partners" 
                 className="px-4 py-2 text-sm font-medium hover:bg-gray-100 hover:text-[#e52222] transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 PARTNERS
-              </Link>
+              </Link> */}
               <Link 
                 href="/contact" 
                 className="px-4 py-2 text-sm font-medium hover:bg-gray-100 hover:text-[#e52222] transition-colors"

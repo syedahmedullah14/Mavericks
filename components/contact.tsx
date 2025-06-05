@@ -1,18 +1,21 @@
 "use client"
 
 import { Phone, Mail, MapPin } from "lucide-react"
+import Image from "next/image"
 
 export default function Contact() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <div 
-        className="relative h-[300px] bg-cover bg-center"
-        style={{
-          backgroundImage: "url('/contact-bg.png')",
-        }}
-      >
-        <div className="relative z-10 h-full flex flex-col items-center justify-center text-white">
+      <div className="relative h-[400px] w-full overflow-hidden">
+        <Image
+          src="/contact-bg.png"
+          alt="Contact Background"
+          fill
+          style={{ objectFit: "contain" }}
+          priority
+        />
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-white z-10">
           <h1 className="text-5xl font-bold">Contact</h1>
           <h1 className="text-5xl font-bold">Us</h1>
         </div>

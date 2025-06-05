@@ -1,15 +1,22 @@
+"use client"
+
+import Image from "next/image"
+
 export default function ProductsHero() {
   return (
-    <section
-      className="relative bg-cover bg-center bg-fixed text-white py-40 md:py-60 min-h-[70vh] flex items-center"
-      style={{
-        backgroundImage:
-          "linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/images/products-overview-bg.jpg')",
-        backgroundPosition: "center 30%"
-      }}
-    >
-      <div className="container mx-auto px-4">
-        <div className="max-w-4xl">
+    <section className="relative min-h-[70vh]">
+      <div className="absolute inset-0">
+        <Image
+          src="/images/products-overview-bg.jpg"
+          alt="Products Overview Background"
+          fill
+          style={{ objectFit: "fill" }}
+          priority
+        />
+        <div className="absolute inset-0 bg-black/30" />
+      </div>
+      <div className="relative z-10 container mx-auto px-4 py-40 md:py-60">
+        <div className="max-w-4xl text-white">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Product Solutions</h1>
           <p className="text-xl leading-relaxed">
             At Mavericks, we deliver high-performance, precision-engineered product solutions designed to meet the
