@@ -8,42 +8,42 @@ export default function ProductSolutions() {
       title: "Valves",
       description:
         "High-Performance Industrial Valves, Including Globe, Ball, Gate, Butterfly, And Cryogenic Types, Designed For Precision Flow Control Across Demanding Applications.",
-      image: "/images/valves.jpg",
+      image: "/Valves.jpg",
       link: "/products#valves",
     },
     {
       title: "Pumps",
       description:
         "A Versatile Range Of Cryogenic, Submersible, Vertical Inline, And Split-Case Pumps To Meet Varied Industrial Fluid Handling Needs With Reliability And Efficiency.",
-      image: "/images/pumps.jpg",
+      image: "/Pumps.jpg",
       link: "/products#pumps",
     },
     {
       title: "Instrumentation",
       description:
         "Comprehensive Instrumentation Solutions For Pressure, Temperature, Flow, And Level Measurement – Including Transmitters, Gauges, Analyzers, And Fittings.",
-      image: "/images/instrumentation.jpg",
+      image: "/instrumentation-fittings.jpg",
       link: "/products#instrumentation",
     },
     {
       title: "Panels",
       description:
         "Custom-Built PCC, MCC, VFD, And Control Panels Designed For Seamless Integration With Automation Systems And Safe Electrical Distribution.",
-      image: "/images/panels.jpg",
+      image: "/Panels.jpg",
       link: "/products#panels",
     },
     {
       title: "Generators",
       description:
         "Robust Diesel Generator Sets Ranging From 3kVA To 4500kVA, Ensuring Uninterrupted Power Supply For Industrial And Commercial Operations.",
-      image: "/images/generators.jpg",
+      image: "/Generators.jpg",
       link: "/products#generators",
     },
     {
       title: "EPC Solutions",
       description:
         "End-To-End Engineering, Procurement, And Construction Services For Industrial Automation, Oil & Gas Systems, Boiler Automation, And Complete Plant Solutions.",
-      image: "/images/epc.jpg",
+      image: "/epc-solutions.jpg",
       link: "/products#epc",
     },
   ]
