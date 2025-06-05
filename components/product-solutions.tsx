@@ -35,7 +35,7 @@ export default function ProductSolutions() {
       title: "panels",
       description:
         "Custom-Built PCC, MCC, VFD, And Control Panels Designed For Seamless Integration With Automation Systems And Safe Electrical Distribution.",
-      image: "/Panels.jpg",
+      image: "/panels.jpg",
       link: "/products",
       sectionId: "panels",
     },
