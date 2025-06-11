@@ -30,7 +30,7 @@ export default function ContactSection() {
               <div className="bg-[#e52222] rounded-full p-4 mb-3">
                 <Mail className="h-6 w-6 text-white" />
               </div>
-              <p>info@mavericks.com</p>
+              <p>info@maverickseng.net</p>
             </div>
 
             <div className="flex flex-col items-center">
