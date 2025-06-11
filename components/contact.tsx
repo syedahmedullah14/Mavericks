@@ -35,7 +35,7 @@ export default function Contact() {
             <div className="rounded-full bg-[#e52222] w-16 h-16 flex items-center justify-center mb-4">
               <Mail className="h-8 w-8 text-white" />
             </div>
-            <p className="text-center">info@mavericks.com</p>
+            <p className="text-center">info@maverickseng.net</p>
           </div>
 
           <div className="flex flex-col items-center">

@@ -16,7 +16,7 @@ export default function ContactInfo() {
             <div className="bg-[#e52222] rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
               <Mail className="h-8 w-8 text-white" />
             </div>
-            <p className="font-semibold text-lg">info@mavericks.com</p>
+            <p className="font-semibold text-lg">info@maverickseng.net</p>
           </div>
 
           <div className="text-center">

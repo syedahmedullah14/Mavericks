@@ -42,7 +42,7 @@ export default function Footer() {
             <h3 className="font-bold text-lg mb-4">CONTACT US</h3>
             <div className="space-y-2">
               <p className="text-sm">PHONE: +971 50 575 2776</p>
-              <p className="text-sm">EMAIL: info@mavericks.com</p>
+              <p className="text-sm">EMAIL: info@maverickseng.net</p>
               <p className="text-sm">ADDRESS:</p>
               <p className="text-sm">Tamani Arts Building, Office No 124, Business Bay, Dubai</p>
             </div>
